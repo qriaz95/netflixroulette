@@ -1,0 +1,17 @@
+code --install-extension christian-kohler.path-intellisense
+code --install-extension devianllert.react-generator
+code --install-extension dsznajder.es7-react-js-snippets
+code --install-extension eamodio.gitlens
+code --install-extension eg2.vscode-npm-script
+code --install-extension firefox-devtools.vscode-firefox-debug
+code --install-extension mhutchie.git-graph
+code --install-extension MS-CEINTL.vscode-language-pack-zh-hans
+code --install-extension ms-dotnettools.csharp
+code --install-extension ms-python.python
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode.cpptools
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension ritwickdey.LiveServer
+code --install-extension sburg.vscode-javascript-booster
+code --install-extension VisualStudioExptTeam.vscodeintellicode
