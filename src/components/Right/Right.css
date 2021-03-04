@@ -1,0 +1,15 @@
+
+.Right-div {
+    background-color: #26598a;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    float: right;
+    min-height: 15vh;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(8px + 2vmin);
+    color: white;
+}
