@@ -39,6 +39,12 @@ module.exports = {
     }
   },
 
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
+
   resolve: {
     extensions: ['.js', '.jsx'],
   },
@@ -73,7 +79,6 @@ module.exports = {
       },
     ]
   },
-
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
