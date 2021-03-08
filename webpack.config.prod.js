@@ -1,10 +1,9 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 fileName = '[name].bundle.js',
 PATHS = {
-  src: path.join(__dirname, './src/'),
   dist: path.join(__dirname, 'dist'),
 };
 
@@ -18,13 +17,6 @@ module.exports = {
   output: {
     path: PATHS.dist,
     filename: fileName,
-    publicPath: '/',
-  },
-
-  watch: false,
-
-  watchOptions: {
-    ignored: '/node_modules/',
   },
 
   optimization: {
@@ -80,10 +72,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-      },
-    }),
-  ],
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'index.html')
+    })
+  ]
 }
